@@ -1,0 +1,50 @@
+# Source code
+src/
+
+# Config files
+.eslintrc*
+.prettierrc*
+*.config.js
+
+# Environment variables (CRITICAL FOR SECURITY!)
+.env
+.env.*
+*.env
+.env.local
+.env.development.local
+
+# Tests
+test/
+__tests__/
+*.test.js
+*.spec.js
+
+# Documentation (keep README.md for npm)
+docs/
+
+# IDE/Editor folders
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Git
+.git/
+.github/
+
+# Cursor
+.cursor/
+
+# Old files and scripts
+*_old*
+*-copy*
+*_copy*
+mcp_old.json
+old_json.json
+
+# Build artifacts we don't need
+*.tgz 

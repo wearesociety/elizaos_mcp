@@ -1,152 +1,35 @@
+# Dependencies
 node_modules
-/out
+npm-debug.log*
 
+# Build
+dist/
+
+# Environment variables
 .env
-.env.production
-.env.local
-.env.bak
-.env_main
+.env.*
+*.env
 
-.idea
-.zed
+# Logs
+logs
+*.log
+
+# NPM
+*.tgz
+
+# IDE/Editor folders
+.vscode/
+.idea/
+*.sublime-*
 .DS_Store
 
-dist/
-# Allow models directory but ignore model files
-db/
-
-*.gguf
-*.onnx
-*.wav
-*.mp3
-
-logs/
-
-test-report.json
-test_data/
-tokencache/
-
-# Character configurations
-characters/**/secrets.json
-characters/**/*.env
-characters/**/*.key
-characters/**/private/
-
-cache/*
-models/*
-
-tsup.config.bundled_*.mjs
-
-.turbo
-.cursorrules
-
-instructions.md
-wallet_data.txt
-
-coverage
-.eslintcache
-
-eliza.manifest
-eliza.manifest.sgx
-eliza.sig
-
-# Configuration to exclude the extra and local_docs directories
+.cursor
+# dist
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+examples
 extra
-**/dist/**
-
-packages/docs/api/*
-
-**/dist/**
-
-**/.docusaurus/**
-**/docs/build/**
-
-lerna-debug.log
-
-tsdoc_cache/
-tsdoc_comments/
-
-**/elizaDb/**# -*- mode: gitignore; -*-
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
-
-# Org-mode
-.org-id-locations
-*_archive
-
-# flymake-mode
-*_flymake.*
-
-# eshell files
-/eshell/history
-/eshell/lastdir
-
-# elpa packages
-/elpa/
-
-# reftex files
-*.rel
-
-# AUCTeX auto folder
-/auto/
-
-# cask packages
-.cask/
-dist/
-
-# Flycheck
-flycheck_*.el
-
-# server auth directory
-/server/
-
-# projectiles files
-.projectile
-
-# directory configuration
-.dir-locals.el
-
-# network security
-/network-security.data
-
-packages/autodoc/text_objects/*
-/env
-pglite/*
-
-# UI Test related files
-screenshots/
-packages/client/ui-tests/screenshots/
-**/ui-tests/screenshots/**
-test-results/
-**/test-results*/
-playwright-report/
-**/playwright-report/
-**/test-results/
-**/playwright/.cache/
-.playwright/
-**/tests/*.log
-**/tests/artifacts/
-**/tests/logs/
-**/tests/temp/
-**/test-report*.json
-**/.nyc_output/
-
-# Archive files
-*.zip
-*.tar
-*.tar.gz
-*.tgz
-*.rar
-*.7z
-
-# Temporary files
-*.tmp
-*.temp
-temp/
-tmp/
+old_code
+src-copy
