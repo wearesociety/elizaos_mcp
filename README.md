@@ -29,22 +29,25 @@ The easiest way to use this MCP is directly with Cursor using npx. Cursor will a
 ```json
 {
   "mcpServers": {
-    "society-elizaos-mcp-local": {
+    "society-elizaos-mcp-npx": { 
       "command": "npx",
       "args": [
         "-y",
-        "society-elizaos-mcp"
+        "society-elizaos-mcp@1.0.9"
       ],
       "env": {
         "ELIZAOS_SERVER_URL": "http://localhost:3000",
-        "ELIZAOS_USER_ID": "your-elizaos-user-uuid",
-        "ELIZAOS_WORLD_ID": "your-elizaos-world-uuid",
-        "ELIZAOS_AGENT_ID": "your-initial-agent-uuid", 
-        "ELIZAOS_ROOM_ID": "your-initial-agent-uuid",
+        "ELIZAOS_USER_ID": "000000000000000000000000000000000000",  example ad64a76a-0e09-0899-b8f8-492d6aea4118
+        "ELIZAOS_WORLD_ID": "000000000000000000000000000000000000", example c930b151-dcfb-41c5-96af-550ffea7023c
+        "ELIZAOS_AGENT_ID": "000000000000000000000000000000000000", example 85e9fa66-6f8c-0f18-922c-d6c962e21e18
+        "ELIZAOS_ROOM_ID": "000000000000000000000000000000000000",  Need to be equal to the ELIZAOS_AGENT_ID 
         "ELIZAOS_CONNECTION_TIMEOUT": "120000",
-        "ELIZAOS_RESPONSE_TIMEOUT": "90000"
+        "ELIZAOS_RESPONSE_TIMEOUT": "90000",
+        "PORT": "3099",
+        "DEBUG": "true",
+        "NODE_ENV": "production",
+        "MCP_DISABLE_PINGS": "true"
       }
-    }
   }
 }
 ```
@@ -109,7 +112,13 @@ If you want to run a local development version of the connector, follow these st
            "ELIZAOS_USER_ID": "your-elizaos-user-uuid",
            "ELIZAOS_WORLD_ID": "your-elizaos-world-uuid",
            "ELIZAOS_AGENT_ID": "your-initial-agent-uuid", 
-           "ELIZAOS_ROOM_ID": "your-initial-agent-uuid"
+           "ELIZAOS_ROOM_ID": "your-initial-agent-uuid",
+           "ELIZAOS_CONNECTION_TIMEOUT": "120000",
+           "ELIZAOS_RESPONSE_TIMEOUT": "90000",
+           "PORT": "3069",
+           "DEBUG": "true",
+           "NODE_ENV": "production",
+           "MCP_DISABLE_PINGS": "true"
          }
        }
      }
