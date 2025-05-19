@@ -1,3 +1,10 @@
+
+
+![alt text](assets/ElizaOS.png)
+
+
+
+
 # Society ElizaOS Connector MCP
 
 The Society ElizaOS Connector MCP (Model Context Protocol) allows you to seamlessly integrate your ElizaOS agents with Cursor. This enables you to list available agents, select a specific agent to interact with, and chat directly with your ElizaOS agents from within the Cursor IDE.
